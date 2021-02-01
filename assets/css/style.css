@@ -1,0 +1,23 @@
+body {
+    background-color: royalblue;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vlakje {
+    background-color: seashell;
+    width: 15vw;
+    height: 15vw;
+    transform: rotateX(2em);
+}
+
+.animeer-knop {
+    height: 1.5em;
+}
