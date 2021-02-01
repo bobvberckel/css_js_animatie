@@ -15,7 +15,7 @@ main {
     background-color: seashell;
     width: 15vw;
     height: 15vw;
-    transform: rotateX(2em);
+    transform: translateX(2em);
 }
 
 .animeer-knop {
