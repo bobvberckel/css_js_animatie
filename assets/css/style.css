@@ -2,6 +2,33 @@ body {
     background-color: royalblue;
     min-height: 100vh;
     margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: seashell;
+}
+
+nav {
+    position: fixed;
+}
+
+.nav {
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav__item {
+    margin-bottom: 0.1em;
+}
+
+.nav__link {
+    color: royalblue;
+    background-color: seashell;
+    text-decoration: none;
+    display: block;
+    padding: 0.2em 0.5em;
 }
 
 main {
