@@ -15,6 +15,8 @@ nav__knop.addEventListener("click", () => {
             item.classList.toggle("nav__link--schuif-in");
         }, 100 * index);
     });
+    document.querySelector(".fa-bars").classList.toggle("verbergen");
+    document.querySelector(".fa-times").classList.toggle("verbergen");
 });
 
 // EventListener toevoegen aan de knop om er voor te zorgen dat de animatie kan starten.
