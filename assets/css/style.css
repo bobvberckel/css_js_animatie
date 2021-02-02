@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap');
+
 .verbergen {
     display: none;
 }
@@ -6,7 +8,7 @@ body {
     background-color: royalblue;
     min-height: 100vh;
     margin: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Londrina Solid', cursive;
     color: seashell;
 }
 
@@ -100,6 +102,28 @@ nav {
         margin-left: 0.1em;
         flex: 1 0 auto;
     }
+
+    .nav__link--schuif-in .nav__tekst {
+        animation: ijl-n-vert 2s forwards;
+    }
+
+    @keyframes ijl-na-vert {
+        0% {
+            transform: translateY(-1em);
+        }
+
+        50% {
+            transform: translateY(0.1em);
+        }
+
+        75% {
+            transform: translateY(-0.15em);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
 }
 
 main {
@@ -111,7 +135,9 @@ main {
 }
 
 .vlakje {
-    background-color: seashell;
+    background-image: url("../images/rocket.png");
+    background-position: center;
+    background-size: cover;
     width: 15vw;
     height: 15vw;
     transform: translateX(2em);
