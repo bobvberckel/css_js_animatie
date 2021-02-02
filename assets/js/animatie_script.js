@@ -11,3 +11,16 @@ document.querySelector(".animeer-knop").addEventListener("click", (e) => {
     // If the class is already in the element, it will remove it. If it doesn't exist in the element. It will add it.
     document.querySelector(".vlakje").classList.toggle("vlakje__naar-rechts");
 });
+
+// Een functie maken om het menu te kunnen starten.
+// Making a function to start the menu.
+const nav__knop = document.querySelector(".nav__knop");
+const nav__link = document.querySelectorAll(".nav__link");
+
+nav__knop.addEventListener("click", () => {
+    nav__link.forEach((item, index) => {
+        setTimeout(() => {
+            item.classList.toggle("nav__link--schuif-in");
+        }, 100 * index);
+    });
+});

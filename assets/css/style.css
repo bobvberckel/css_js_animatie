@@ -19,6 +19,17 @@ nav {
     flex-direction: column;
 }
 
+.nav__knop {
+    padding: 0.5em 0.9em;
+    box-sizing: border-box;
+    width: 2.7em;
+}
+
+.nav__knop:hover {
+    color: royalblue;
+    background-color: seashell;
+}
+
 .nav__item {
     margin-bottom: 0.1em;
 }
@@ -28,7 +39,19 @@ nav {
     background-color: seashell;
     text-decoration: none;
     display: block;
-    padding: 0.2em 0.5em;
+    padding: 0.2em 0.8em;
+    transform: translateX(-8.4em);
+    transition: transform 0.8s;
+}
+
+.nav__link--schuif-in {
+    transform: translateX(0);
+    transition: transform 0.8s;
+}
+
+.nav__link:hover {
+    background-color: slateblue;
+    color: seashell;
 }
 
 main {
