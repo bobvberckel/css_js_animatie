@@ -58,6 +58,28 @@ nav {
     color: seashell;
 }
 
+.nav__link--schuif-in .nav__tekst {
+    animation: ijl-na 2s forwards;
+}
+
+@keyframes ijl-na {
+    0% {
+        transform: translateX(-2em);
+    }
+
+    50% {
+        transform: translateX(0.8em);
+    }
+
+    75% {
+        transform: translateX(-0.4em);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 @media screen and (min-width: 600px) {
     .nav {
         flex-direction: row;
