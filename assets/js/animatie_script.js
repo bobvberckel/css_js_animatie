@@ -1,3 +1,9 @@
+// Na enige tijd start de animatie van zelf.
+// After an amount of time, the animation will start itself.
+setTimeout(() => {
+    document.querySelector(".vlakje").classList.toggle("vlakje__naar-rechts");
+}, 3000);
+
 // EventListener toevoegen aan de knop om er voor te zorgen dat de animatie kan starten.
 // Adding an EventListener to start the animation when the button is started.
 document.querySelector(".animeer-knop").addEventListener("click", (e) => {
